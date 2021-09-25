@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Bienvenu au Activité Scolaire"
+         android:id="@+id/bienvenu"
+         android:layout_marginLeft="75dp"
+         android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        android:layout_below="@id/bienvenu"
+        android:layout_marginTop="5dp"
+        android:id="@+id/activite1Login"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/activite1Login"
+        android:id="@+id/activite1Password"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activite1Password"
+        android:layout_marginLeft="10dp"
+        android:text="OK"
+        android:id="@+id/buttonLogin"
+        android:onClick="login"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="20dp"
+        android:text="Si vous n'êtes pas membres : "
+        android:id="@+id/membres"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/membres"
+        android:layout_marginTop="5dp"
+        android:id="@+id/buttoninscription"
+        android:layout_marginLeft="10dp"
+        android:text="Inscription"
+        android:onClick="inscription"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttoninscription"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textviewalert"/>
+
+
+</android.widget.RelativeLayout>
